@@ -259,6 +259,29 @@ export default function JedahMain(): JSX.Element {
                         <div className="hidden w-full md:grid md:grid-cols-2 md:gap-6 lg:gap-10 xl:grid-cols-3">
                             <div className="flex flex-col justify-between gap-5 rounded-3xl bg-cyan-200 p-6 shadow-sm drop-shadow-lg">
                                 <p>
+                                    Recomiendo mucho las clases con la Jedah.
+                                    Ella es muy divertida, simpática y muy
+                                    cercana y eso hace que uno se sienta muy
+                                    cómoda y pueda bajar la guardia y aprender
+                                    tranquila. Te quiero mucho Jedah jaja! Nunca
+                                    dejes de ser buena pa la talla y cercana
+                                    porque eso a mí me ayuda mucho con la
+                                    confianza en mí misma! Tomen clases con
+                                    ella, no se van a arrepentir y así evitan
+                                    botar plata con otra genteeeeeee! Muchas
+                                    gracias porque contigo he aprendido lo que
+                                    nunca he podido aprender con nadie más, ni
+                                    siquiera en el colegio jajaja! Sigo contigo
+                                    ❤️ !
+                                </p>
+                                <div className="flex flex-row gap-5">
+                                    <Smile />
+                                    <p>Camila C</p>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col justify-between gap-5 rounded-3xl bg-rose-200 p-6 shadow-sm drop-shadow-lg">
+                                <p>
                                     Las clases del Reading Club están
                                     maravillosas, me encantan 💕. Leer un libro
                                     en Inglés ha sido un desafío enorme pero a
@@ -268,15 +291,15 @@ export default function JedahMain(): JSX.Element {
                                     sobre lo que leemos ha sido una forma más
                                     entretenida de ir aprendiendo y avanzando
                                     con el inglés, especialmente con el
-                                    Speaking.{' '}
+                                    Speaking.
                                 </p>
                                 <div className="flex flex-row gap-5">
                                     <Smile />
-                                    <p>Camila C</p>
+                                    <p>Paula R</p>
                                 </div>
                             </div>
 
-                            <div className="flex flex-col justify-between gap-5 rounded-3xl bg-rose-200 p-6 shadow-sm drop-shadow-lg">
+                            <div className="flex flex-col justify-between gap-5 rounded-3xl bg-yellow-200 p-6 shadow-sm drop-shadow-lg md:col-span-2 xl:col-span-1">
                                 <p>
                                     Amo la personalidad de la Jedah para todo,
                                     estoy con ella en el mami squad y en el
@@ -292,16 +315,6 @@ export default function JedahMain(): JSX.Element {
                                     nuestros bebes a hablar inglés, es tambien
                                     una comunidad de personas que está para ti
                                     en todo.
-                                </p>
-                                <div className="flex flex-row gap-5">
-                                    <Smile />
-                                    <p>Paula R</p>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col justify-between gap-5 rounded-3xl bg-yellow-200 p-6 shadow-sm drop-shadow-lg md:col-span-2 xl:col-span-1">
-                                <p>
-                                    Amo la personalidad de la Jedah para todo...
                                 </p>
                                 <div className="flex flex-row gap-5">
                                     <Smile />
