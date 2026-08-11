@@ -1,18 +1,17 @@
 import { Head, Link } from '@inertiajs/react';
 import {
-    Box,
-    Calendar,
+    BriefcaseBusiness,
     Check,
-    Clock,
     HandCoins,
     HandHeart,
-    MapPin,
     MenuIcon,
-    MessageCircleHeart,
+    Plane,
     Rocket,
+    Target,
 } from 'lucide-react';
 import type { JSX } from 'react';
-import speakingClubImage from '@/assets/images/speakingClub.png';
+import conversationImage from '@/assets/conversation.svg';
+import onlineImage from '@/assets/online.svg';
 import logo from '@/assets/logo.svg';
 import questionImage from '@/assets/question.svg';
 import bgWave from '@/assets/waves.svg';
@@ -69,28 +68,27 @@ export default function JedahMain(): JSX.Element {
                     </nav>
                     {/* Hero English Course*/}
                     <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-10 sm:px-6 sm:py-12 md:flex-row md:items-center md:px-10 lg:gap-10 lg:px-20 lg:py-16">
-                        <img
+                        {/* <img
                             src={speakingClubImage}
                             alt="Jedah cartoon with a globe maps and planes and a suitcase"
                             className="w-full max-w-70 rounded-full sm:max-w-85 md:max-w-95 lg:max-w-115"
-                        />
+                        /> */}
 
                         <div className="flex max-w-xl flex-col items-center gap-4 text-center md:items-start md:text-left lg:gap-6">
                             <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl">
-                                Speaking Club
+                                Private Lessons
                             </h1>
 
                             <span className="text-base sm:text-lg lg:text-xl">
-                                Join our weekly Speaking Club to practice
-                                real-world English in a relaxed, judgment-free
-                                environment. Whether you are preparing for
-                                travel, work, or exams, this is your safe space
-                                to find your voice
+                                Tu clase, tus reglas. Tú decides cuándo, cómo y
+                                qué aprender. Un programa 100% personalizado
+                                para alcanzar tus objetivos en el menor tiempo
+                                posible.
                             </span>
 
                             <div className="pt-4 sm:pt-6 lg:pt-10">
                                 <a
-                                    className="inline-block rounded-lg bg-cyan-400 px-6 py-4 text-sm font-medium drop-shadow-lg hover:bg-cyan-500 sm:text-base"
+                                    className="inline-block rounded-lg bg-yellow-200 px-6 py-4 text-sm font-medium drop-shadow-lg hover:bg-yellow-400 sm:text-base"
                                     href="#"
                                 >
                                     Quiero comenzar
@@ -101,47 +99,54 @@ export default function JedahMain(): JSX.Element {
                 </header>
 
                 <main>
-                    {/* Modalidad del curso*/}
+                    {/* Que se hace en las clases privadas*/}
                     <section className="flex flex-col items-center gap-8 bg-rose-300 px-6 py-16 text-center text-black sm:px-10 lg:gap-12 lg:px-20 lg:py-24 xl:px-40">
                         <h2 className="text-lg font-bold">
-                            Modalidad del Curso
+                            Elige las clases privadas si quieres:
                         </h2>
                         <div className="flex flex-col items-start gap-5 px-5">
                             <div className="flex flex-col items-start gap-1">
                                 <div className="flex flex-row gap-2">
-                                    <MapPin />
-                                    <p className="font-bold">¿Dónde?</p>
+                                    <Target />
+                                    <p className="font-bold">
+                                        Preparación de Exámenes
+                                    </p>
                                 </div>
 
                                 <p className="content-start text-left">
-                                    Reuniones grupales online en vivo
+                                    Cambridge (FCE, CAE), IELTS, TOEFL. Estudia
+                                    con un plan enfocado en aprobar.
                                 </p>
                             </div>
                             <div className="flex flex-col items-start gap-1">
                                 <div className="flex flex-row gap-2">
-                                    <Calendar />
-                                    <p className="font-bold">¿Cuándo?</p>
+                                    <BriefcaseBusiness />
+                                    <p className="font-bold">
+                                        Inglés de Negocios
+                                    </p>
                                 </div>
 
                                 <div className="flex flex-row gap-2">
                                     <p className="content-start text-left">
-                                        Una vez a la semana, el horario se crea
-                                        segun tu disponibilidad.
+                                        Reuniones, emails, presentaciones y
+                                        negociaciones. Mejora tu inglés
+                                        profesional rápidamente.
                                     </p>
                                 </div>
                             </div>
                             <div className="flex flex-col items-start gap-1">
                                 <div className="flex flex-row gap-2">
-                                    <Box />
+                                    <Plane />
                                     <p className="font-bold">
-                                        Discuciones Tematicas
+                                        Inglés para Viajar
                                     </p>
                                 </div>
 
                                 <div>
                                     <p className="content-start text-left">
-                                        Cada semana elegimos un tema para
-                                        discutir y guiar la conversación.
+                                        Aeropuertos, hoteles, restaurantes y
+                                        situaciones reales. Empieza a disfrutar
+                                        de tus viajes.
                                     </p>
                                 </div>
                             </div>
@@ -160,15 +165,17 @@ export default function JedahMain(): JSX.Element {
                             </div>
                             <div className="flex flex-col items-start gap-1">
                                 <div className="flex flex-row gap-2">
-                                    <MessageCircleHeart />
-                                    <p className="font-bold">Feedback</p>
+                                    <Rocket />
+                                    <p className="font-bold">
+                                        Progreso Acelerado
+                                    </p>
                                 </div>
 
                                 <div>
                                     <p className="content-start text-left">
-                                        Comentarios amables y constructivos por
-                                        parte de Jedah y de los compañeros para
-                                        ayudarte a mejorar de forma natural.
+                                        Si tienes poco tiempo y necesitas
+                                        resultados rápidos, la atención
+                                        individual es tu mejor inversión.
                                     </p>
                                 </div>
                             </div>
@@ -183,89 +190,138 @@ export default function JedahMain(): JSX.Element {
                             </a>
                         </div>
                     </section>
-                    {/* Descubre tu nivel*/}
+                    {/* Como funciona*/}
                     <section className="flex flex-col items-center gap-8 bg-amber-50 px-6 py-16 text-center text-black sm:px-10 lg:gap-12 lg:px-20 lg:py-24 xl:px-40">
-                        <h2 className="text-lg font-bold">
-                            ¿Cómo saber si es para ti??
-                        </h2>
+                        <h2 className="text-lg font-bold">¿Cómo funciona?</h2>
                         <div className="flex flex-col items-start gap-5 px-5">
                             <div className="flex flex-col items-center gap-5">
                                 <img
-                                    src={questionImage}
+                                    src={conversationImage}
                                     alt="Looking for somenting ore question image"
                                 />
                                 <ul className="flex flex-col">
-                                    <li className="felx-row flex gap-2">
-                                        <Check />{' '}
+                                    <li className="flex flex-col gap-2">
+                                        <p className="font-bold">
+                                            Paso 1: Cuéntame tu objetivo
+                                        </p>
                                         <p>
-                                            Perfecto para personas que estan en
-                                            un nivel intermedio y quienes algo
-                                            más que un libro y gramatica
+                                            Reserva una charla gratuita de 15
+                                            minutos. Me cuentas qué necesitas y
+                                            evaluamos tu nivel actual.
                                         </p>
                                     </li>
-                                    <li className="felx-row flex gap-2">
-                                        <Check />{' '}
+                                    <li className="flex flex-col gap-2">
+                                        <p className="font-bold">
+                                            Paso 2: Recibe tu plan personalizado
+                                        </p>
                                         <p>
-                                            Increible para profesionales que
-                                            necesitan mejorar la fluidez en
-                                            reuniones
+                                            Diseño un programa a medida para ti,
+                                            con materiales y ejercicios
+                                            adaptados a tus metas.
                                         </p>
                                     </li>
-                                    <li className="felx-row flex gap-2">
-                                        <Check />{' '}
+                                    <li className="flex flex-col gap-2">
+                                        <p className="font-bold">
+                                            Paso 3: Empieza cuando quieras
+                                        </p>
                                         <p>
-                                            Ideal para viajeros que quieren
-                                            sentirse mas seguros en otros paises
+                                            Sin fechas de inicio ni compromisos
+                                            de meses. Reserva cada sesión según
+                                            tu disponibilidad.
                                         </p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
-                        <div>
-                            <a
-                                className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
-                            >
-                                descubre tu nivel
-                            </a>
+                        <h2 className="text-lg font-bold">
+                            ¿Qué Incluye Cada Sesión?
+                        </h2>
+                        <div className="flex flex-col items-start gap-5 px-5">
+                            <div className="flex flex-col items-start gap-5">
+                                <img
+                                    src={onlineImage}
+                                    alt="Looking for somenting ore question image"
+                                />
+                                <ul className="list-disc space-y-2 text-left">
+                                    <li className="">
+                                        <p className="">
+                                            Clase 100% personalizada. Sin
+                                            temario genérico. Trabajamos
+                                            exactamente lo que tú necesitas.
+                                        </p>
+                                    </li>
+                                    <li className="">
+                                        <p>
+                                            Corrección en tiempo real. Feedback
+                                            inmediato sobre pronunciación,
+                                            gramática y vocabulario.
+                                        </p>
+                                    </li>
+                                    <li className="">
+                                        <p>
+                                            Seguimiento entre clases. Tareas
+                                            opcionales y revisión por correo
+                                            para que no pierdas ritmo.
+                                        </p>
+                                    </li>
+                                    <li className="">
+                                        <p>
+                                            Grabación de la sesión. Repasa tu
+                                            clase cuando quieras (si lo deseas).
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </section>
                     {/* CTA*/}
                     <section className="flex flex-col items-center gap-8 bg-amber-50 px-6 py-16 text-center text-black sm:px-10 lg:gap-12 lg:px-20 lg:py-24 xl:px-40">
-                        <h2 className="text-lg font-bold">
-                            Precio y Logistica
-                        </h2>
-                        <div className="flex flex-col items-start gap-5 px-5">
-                            <div className="flex flex-col items-center gap-3">
-                                <div className="flex flex-row gap-2">
-                                    <HandCoins />
-                                    <p className="items-center text-2xl">
-                                        Solo $40.000 clp
-                                    </p>
+                        <h2 className="text-lg font-bold">Precio y Paquetes</h2>
+                        <div className="flex flex-col gap-4">
+                            {/* CARD*/}
+                            <div className="rounded-2xl border-2 border-solid border-teal-400 bg-white px-7 py-5">
+                                <p className="pb-2 text-left font-bold">
+                                    Sesion Individual
+                                </p>
+                                <div className="pl-4">
+                                    <ul className="list-disc space-y-1 text-left">
+                                        <li>Máxima flexibilidad</li>
+                                        <li>Reserva cuando quieras</li>
+                                        <li>30€ / clase (60 min)</li>
+                                        <li>
+                                            Ideal para necesidades puntuales.
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div className="flex flex-col justify-center">
-                                    <p className="items-center text-xs">
-                                        (o el equivalente en tu moneda)
-                                    </p>
+                            </div>
+                            <div className="rounded-2xl border-2 border-solid border-yellow-400 bg-white px-7 py-5">
+                                <p className="pb-2 text-left font-bold">
+                                    Paquete 5 Clases
+                                </p>
+                                <div className="pl-4">
+                                    <ul className="list-disc space-y-1 text-left">
+                                        <li>Ahorra un 10%</li>
+                                        <li>Validez: 3 meses</li>
+                                        <li>135€ total (27€ / clase)</li>
+                                        <li>Ideal para clases quincenales</li>
+                                        <li>Seguimiento entre sesiones</li>
+                                    </ul>
                                 </div>
-
-                                <p className="text-justify">Qué incluye?</p>
-                                <ul className="flex flex-col">
-                                    <li className="felx-row flex gap-2">
-                                        <Check /> <p>4 reuniones mensuales</p>
-                                    </li>
-                                    <li className="felx-row flex gap-2">
-                                        <Check /> <p>Material y actividades</p>
-                                    </li>
-                                    <li className="felx-row flex gap-2">
-                                        <Check /> <p>Grupo de apoyo</p>
-                                    </li>
-                                    <li className="felx-row flex gap-2">
-                                        <Check />
-                                        <p>Seguimiento</p>
-                                    </li>
-                                </ul>
+                            </div>
+                            <div className="rounded-2xl border-2 border-solid border-lime-400 bg-white px-7 py-5">
+                                <p className="pb-2 text-left font-bold">
+                                    Paquete 10 Clases{' '}
+                                </p>
+                                <div className="pl-4">
+                                    <ul className="list-disc space-y-1 text-left">
+                                        <li>Ahorra un 20%</li>
+                                        <li>Validez: 3 meses</li>
+                                        <li>240€ total (24€ / clase)</li>
+                                        <li>Ideal para progreso constante</li>
+                                        <li>Seguimiento entre sesiones</li>
+                                        <li>Prioridad en horarios</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 

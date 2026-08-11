@@ -3,18 +3,17 @@ import {
     Box,
     Calendar,
     Check,
-    Clock,
     HandCoins,
     HandHeart,
     MapPin,
     MenuIcon,
     MessageCircleHeart,
-    Rocket,
 } from 'lucide-react';
 import type { JSX } from 'react';
-import speakingClubImage from '@/assets/images/speakingClub.png';
+import readingClubImage from '@/assets/images/readingClub.png';
 import logo from '@/assets/logo.svg';
 import questionImage from '@/assets/question.svg';
+import motherImage from '@/assets/babyBottle.svg';
 import bgWave from '@/assets/waves.svg';
 import { home } from '@/routes';
 
@@ -70,22 +69,21 @@ export default function JedahMain(): JSX.Element {
                     {/* Hero English Course*/}
                     <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-10 sm:px-6 sm:py-12 md:flex-row md:items-center md:px-10 lg:gap-10 lg:px-20 lg:py-16">
                         <img
-                            src={speakingClubImage}
+                            src={readingClubImage}
                             alt="Jedah cartoon with a globe maps and planes and a suitcase"
                             className="w-full max-w-70 rounded-full sm:max-w-85 md:max-w-95 lg:max-w-115"
                         />
 
                         <div className="flex max-w-xl flex-col items-center gap-4 text-center md:items-start md:text-left lg:gap-6">
                             <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl">
-                                Speaking Club
+                                Mami Squad
                             </h1>
 
                             <span className="text-base sm:text-lg lg:text-xl">
-                                Join our weekly Speaking Club to practice
-                                real-world English in a relaxed, judgment-free
-                                environment. Whether you are preparing for
-                                travel, work, or exams, this is your safe space
-                                to find your voice
+                                Únete a la primera comunidad de mamás chilenas
+                                que están criando hijos bilingües. Guías
+                                fáciles, recursos listos y una tribu que te
+                                entiende.
                             </span>
 
                             <div className="pt-4 sm:pt-6 lg:pt-10">
@@ -101,10 +99,10 @@ export default function JedahMain(): JSX.Element {
                 </header>
 
                 <main>
-                    {/* Modalidad del curso*/}
+                    {/*Engagement*/}
                     <section className="flex flex-col items-center gap-8 bg-rose-300 px-6 py-16 text-center text-black sm:px-10 lg:gap-12 lg:px-20 lg:py-24 xl:px-40">
                         <h2 className="text-lg font-bold">
-                            Modalidad del Curso
+                            Tu guía fácil para criar bilingües
                         </h2>
                         <div className="flex flex-col items-start gap-5 px-5">
                             <div className="flex flex-col items-start gap-1">
@@ -120,13 +118,17 @@ export default function JedahMain(): JSX.Element {
                             <div className="flex flex-col items-start gap-1">
                                 <div className="flex flex-row gap-2">
                                     <Calendar />
-                                    <p className="font-bold">¿Cuándo?</p>
+                                    <p className="font-bold">
+                                        Talleres Mensuales
+                                    </p>
                                 </div>
 
                                 <div className="flex flex-row gap-2">
                                     <p className="content-start text-left">
-                                        Una vez a la semana, el horario se crea
-                                        segun tu disponibilidad.
+                                        Sesiones interactivas conmigo y
+                                        especialistas invitadas (logopeda,
+                                        psicóloga, etc.). Aprende estrategias
+                                        reales y resuelve tus dudas en directo.
                                     </p>
                                 </div>
                             </div>
@@ -134,56 +136,43 @@ export default function JedahMain(): JSX.Element {
                                 <div className="flex flex-row gap-2">
                                     <Box />
                                     <p className="font-bold">
-                                        Discuciones Tematicas
+                                        Recursos Listos para Usar
                                     </p>
                                 </div>
 
                                 <div>
                                     <p className="content-start text-left">
-                                        Cada semana elegimos un tema para
-                                        discutir y guiar la conversación.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-start gap-1">
-                                <div className="flex flex-row gap-2">
-                                    <HandHeart />
-                                    <p className="font-bold">¿Qué hacemos?</p>
-                                </div>
-
-                                <div>
-                                    <p className="content-start text-left">
-                                        Usamos juegos de roles, juegos para
-                                        ayudarte a practicar de forma divertida.
+                                        Sesiones interactivas conmigo y
+                                        especialistas invitadas (logopeda,
+                                        psicóloga, etc.). Aprende estrategias
+                                        reales y resuelve tus dudas en directo.
                                     </p>
                                 </div>
                             </div>
                             <div className="flex flex-col items-start gap-1">
                                 <div className="flex flex-row gap-2">
                                     <MessageCircleHeart />
-                                    <p className="font-bold">Feedback</p>
+                                    <p className="font-bold">
+                                        Comunidad 24/7 (Tu Tribu)
+                                    </p>
                                 </div>
 
                                 <div>
                                     <p className="content-start text-left">
-                                        Comentarios amables y constructivos por
-                                        parte de Jedah y de los compañeros para
-                                        ayudarte a mejorar de forma natural.
+                                        Un grupo exclusivo donde compartimos,
+                                        apoyamos y resolvemos dudas. Una profe
+                                        que vive tu misma realidad está siempre
+                                        ahí para guiarte. Y nos juntamos dos
+                                        veces a la semana para conversar y
+                                        descargarnos!
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div>
-                            <a
-                                className="inline-block rounded-2xl bg-amber-50 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
-                            >
-                                Escríbeme
-                            </a>
-                        </div>
+                        <div></div>
                     </section>
-                    {/* Descubre tu nivel*/}
+                    {/* Como saber si es parta ti*/}
                     <section className="flex flex-col items-center gap-8 bg-amber-50 px-6 py-16 text-center text-black sm:px-10 lg:gap-12 lg:px-20 lg:py-24 xl:px-40">
                         <h2 className="text-lg font-bold">
                             ¿Cómo saber si es para ti??
@@ -191,31 +180,31 @@ export default function JedahMain(): JSX.Element {
                         <div className="flex flex-col items-start gap-5 px-5">
                             <div className="flex flex-col items-center gap-5">
                                 <img
-                                    src={questionImage}
+                                    className="size-34"
+                                    src={motherImage}
                                     alt="Looking for somenting ore question image"
                                 />
                                 <ul className="flex flex-col">
                                     <li className="felx-row flex gap-2">
                                         <Check />{' '}
                                         <p>
-                                            Perfecto para personas que estan en
-                                            un nivel intermedio y quienes algo
-                                            más que un libro y gramatica
+                                            Quieres que tu hijo/a hable inglés,
+                                            pero no te sientes capaz de
+                                            enseñárselo.
                                         </p>
                                     </li>
                                     <li className="felx-row flex gap-2">
                                         <Check />{' '}
                                         <p>
-                                            Increible para profesionales que
-                                            necesitan mejorar la fluidez en
-                                            reuniones
+                                            Necesitas algo rápido y práctico que
+                                            encaje en tu agenda de mamá ocupada.
                                         </p>
                                     </li>
                                     <li className="felx-row flex gap-2">
                                         <Check />{' '}
                                         <p>
-                                            Ideal para viajeros que quieren
-                                            sentirse mas seguros en otros paises
+                                            Buscas una comunidad que te entienda
+                                            y te motive sin juzgar.
                                         </p>
                                     </li>
                                 </ul>
@@ -224,10 +213,10 @@ export default function JedahMain(): JSX.Element {
 
                         <div>
                             <a
-                                className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
+                                className="inline-block rounded-2xl bg-cyan-400 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
                                 href="#"
                             >
-                                descubre tu nivel
+                                Quiero unirme
                             </a>
                         </div>
                     </section>
@@ -241,29 +230,33 @@ export default function JedahMain(): JSX.Element {
                                 <div className="flex flex-row gap-2">
                                     <HandCoins />
                                     <p className="items-center text-2xl">
-                                        Solo $40.000 clp
+                                        Solo $10.000 clp
                                     </p>
                                 </div>
                                 <div className="flex flex-col justify-center">
                                     <p className="items-center text-xs">
-                                        (o el equivalente en tu moneda)
+                                        mensuales <br /> (o el equivalente en tu
+                                        moneda)
                                     </p>
                                 </div>
 
                                 <p className="text-justify">Qué incluye?</p>
                                 <ul className="flex flex-col">
                                     <li className="felx-row flex gap-2">
-                                        <Check /> <p>4 reuniones mensuales</p>
+                                        <Check />{' '}
+                                        <p>1 Taller en vivo mensual</p>
                                     </li>
                                     <li className="felx-row flex gap-2">
-                                        <Check /> <p>Material y actividades</p>
+                                        <Check />{' '}
+                                        <p>Recursos descargables ilimitados.</p>
                                     </li>
                                     <li className="felx-row flex gap-2">
-                                        <Check /> <p>Grupo de apoyo</p>
+                                        <Check />{' '}
+                                        <p>Acceso a la comunidad 24/7.</p>
                                     </li>
                                     <li className="felx-row flex gap-2">
                                         <Check />
-                                        <p>Seguimiento</p>
+                                        <p>Soporte directo con Jedah.</p>
                                     </li>
                                 </ul>
                             </div>

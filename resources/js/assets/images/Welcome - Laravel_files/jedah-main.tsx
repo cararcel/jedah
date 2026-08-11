@@ -1,0 +1,1 @@
+throw new Error("[Vite] Cross-origin requests for classic scripts must be made with CORS mode enabled. Make sure to set the \"crossorigin\" attribute on your <script> tag.");

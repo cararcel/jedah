@@ -3,16 +3,14 @@ import {
     Box,
     Calendar,
     Check,
-    Clock,
     HandCoins,
     HandHeart,
     MapPin,
     MenuIcon,
     MessageCircleHeart,
-    Rocket,
 } from 'lucide-react';
 import type { JSX } from 'react';
-import speakingClubImage from '@/assets/images/speakingClub.png';
+import readingClubImage from '@/assets/images/readingClub.png';
 import logo from '@/assets/logo.svg';
 import questionImage from '@/assets/question.svg';
 import bgWave from '@/assets/waves.svg';
@@ -70,22 +68,21 @@ export default function JedahMain(): JSX.Element {
                     {/* Hero English Course*/}
                     <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-10 sm:px-6 sm:py-12 md:flex-row md:items-center md:px-10 lg:gap-10 lg:px-20 lg:py-16">
                         <img
-                            src={speakingClubImage}
+                            src={readingClubImage}
                             alt="Jedah cartoon with a globe maps and planes and a suitcase"
                             className="w-full max-w-70 rounded-full sm:max-w-85 md:max-w-95 lg:max-w-115"
                         />
 
                         <div className="flex max-w-xl flex-col items-center gap-4 text-center md:items-start md:text-left lg:gap-6">
                             <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl">
-                                Speaking Club
+                                Reading Club
                             </h1>
 
                             <span className="text-base sm:text-lg lg:text-xl">
-                                Join our weekly Speaking Club to practice
-                                real-world English in a relaxed, judgment-free
-                                environment. Whether you are preparing for
-                                travel, work, or exams, this is your safe space
-                                to find your voice
+                                No leas solo palabras, vive historias. Únete a
+                                nuestro club mensual para mejorar tu comprensión
+                                lectora, ampliar vocabulario y debatir sobre
+                                libros fascinantes
                             </span>
 
                             <div className="pt-4 sm:pt-6 lg:pt-10">
@@ -191,6 +188,7 @@ export default function JedahMain(): JSX.Element {
                         <div className="flex flex-col items-start gap-5 px-5">
                             <div className="flex flex-col items-center gap-5">
                                 <img
+                                    className="size-34"
                                     src={questionImage}
                                     alt="Looking for somenting ore question image"
                                 />
@@ -220,15 +218,6 @@ export default function JedahMain(): JSX.Element {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-
-                        <div>
-                            <a
-                                className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
-                            >
-                                descubre tu nivel
-                            </a>
                         </div>
                     </section>
                     {/* CTA*/}

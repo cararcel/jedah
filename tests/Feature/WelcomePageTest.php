@@ -17,3 +17,11 @@ test('english course page renders the english course component', function () {
             ->component('english-course'),
         );
 });
+
+test('mami squad page renders the mami squad component', function () {
+    $this->get(route('mami-squad'))
+        ->assertOk()
+        ->assertInertia(fn (Assert $page) => $page
+            ->component('mami-squad'),
+        );
+});
