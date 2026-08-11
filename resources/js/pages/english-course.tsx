@@ -5,10 +5,11 @@ import {
     Clock,
     HandCoins,
     MapPin,
-    MenuIcon,
     Rocket,
 } from 'lucide-react';
 import type { JSX } from 'react';
+import EnglishLevels from '@/components/english-levels';
+import MobileMenu from '@/components/mobile-menu';
 import logo from '@/assets/logo.svg';
 import englishCourseImage from '@/assets/images/englishCourse.jpg';
 import bgWave from '@/assets/waves.svg';
@@ -25,7 +26,7 @@ export default function JedahMain(): JSX.Element {
                 />
             </Head>
 
-            <div className="min-h-screen bg-amber-50 dark:text-black">
+            <div className="min-h-screen bg-amber-50 pb-24 md:pb-0 dark:text-black">
                 <header className="relative overflow-hidden">
                     <img
                         src={bgWave}
@@ -41,11 +42,6 @@ export default function JedahMain(): JSX.Element {
                                 className="h-16 w-auto sm:h-20 md:h-24"
                             />
                         </Link>
-
-                        {/* Mobile menu */}
-                        <button className="md:hidden">
-                            <MenuIcon className="h-6 w-6" />
-                        </button>
 
                         {/* Desktop menu */}
                         <ul className="hidden gap-6 md:flex lg:gap-10">
@@ -208,367 +204,7 @@ export default function JedahMain(): JSX.Element {
                             </a>
                         </div>
                     </section>
-                    {/* Niveles*/}
-                    <section className="flex flex-col items-center gap-8 bg-amber-50 px-6 py-16 text-center text-black sm:px-10 lg:gap-12 lg:px-20 lg:py-24 xl:px-40">
-                        <h2 className="text-lg font-bold">Niveles</h2>
-                        <div className="flex flex-col items-start gap-5 px-5 lg:grid lg:grid-cols-3">
-                            {/* card*/}
-                            <div className="flex h-full flex-col rounded-2xl bg-rose-400 p-5">
-                                {' '}
-                                <div className="flex flex-row justify-between p-2">
-                                    <p className="text-2xl font-bold">
-                                        Nivel A1
-                                    </p>
-                                    <p>Principiante</p>
-                                </div>
-                                <div className="flex h-full flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                    <div className="flex flex-col gap-3 p-2">
-                                        <p className="font-bold">Vocabulario</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>Saludos y despedidas.</li>
-                                            <li>
-                                                Números, colores, días de la
-                                                semana, meses, estaciones.
-                                            </li>
-                                            <li>
-                                                Familia y relaciones básicas.
-                                            </li>
-                                            <li>
-                                                Objetos cotidianos (ropa,
-                                                comidas, muebles).
-                                            </li>
-                                            <li>
-                                                Artículos indefinidos (a, an) y
-                                                definidos (the).
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="text-auto flex flex-col rounded-2xl bg-amber-50 p-3">
-                                        <p className="font-bold">Gramática</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Verbo "to be" (afirmativo,
-                                                negativo, interrogativo).
-                                            </li>
-                                            <li>
-                                                Presente simple (afirmaciones y
-                                                negaciones simples).
-                                            </li>
-                                            <li>
-                                                Pronombres personales y
-                                                adjetivos posesivos.
-                                            </li>
-                                            <li>
-                                                Artículos definidos e
-                                                indefinidos.
-                                            </li>
-                                            <li>
-                                                Plurales regulares e
-                                                irregulares.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Habilidades</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Presentarse y dar información
-                                                personal básica.
-                                            </li>
-                                            <li>
-                                                Comprender instrucciones
-                                                simples.
-                                            </li>
-                                            <li>
-                                                Preguntar y responder sobre
-                                                datos personales (nombre, edad,
-                                                nacionalidad).
-                                            </li>
-                                            <li>
-                                                Práctica oral continua para
-                                                mejorar la fluidez.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* card*/}
-                            <div className="flex h-full flex-col rounded-2xl bg-teal-400 p-5">
-                                {' '}
-                                <div className="flex flex-row justify-between p-2">
-                                    <p className="text-2xl font-bold">
-                                        Nivel A2
-                                    </p>
-                                    <p>Elemental</p>
-                                </div>
-                                <div className="flex h-full flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                    <div className="flex flex-col gap-3 p-2">
-                                        <p className="font-bold">Vocabulario</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Descripción de lugares (casa,
-                                                ciudad, tiendas).
-                                            </li>
-                                            <li>
-                                                Rutinas diarias (trabajo, ocio,
-                                                escuela).
-                                            </li>
-                                            <li>Comida, salud y clima.</li>
-                                            <li>
-                                                Vocabulario relacionado con
-                                                transportes y viajes.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Gramática</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Presente perfecto (experiencias
-                                                pasadas).
-                                            </li>
-                                            <li>
-                                                Pasado continuo (acciones en
-                                                progreso en el pasado).
-                                            </li>
-                                            <li>
-                                                Futuro con "will" y "going to".
-                                            </li>
-                                            <li>Condicionales.</li>
-                                            <li>Gerundios e infinitivos.</li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Habilidades</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Relatar experiencias y hablar de
-                                                planes y metas.
-                                            </li>
-                                            <li>
-                                                Participar en conversaciones
-                                                sobre temas de interés.
-                                            </li>
-                                            <li>
-                                                Expresar opiniones y pedir/dar
-                                                consejos.
-                                            </li>
-                                            <li>
-                                                Práctica continua de speaking
-                                                para mejorar la fluidez.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* card*/}
-                            <div className="flex flex-col rounded-2xl bg-yellow-400 p-5">
-                                {' '}
-                                <div className="flex flex-row justify-between p-2">
-                                    <p className="text-2xl font-bold">
-                                        Nivel B1
-                                    </p>
-                                    <p>Intermedio</p>
-                                </div>
-                                <div className="flex h-full flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                    <div className="flex flex-col gap-3 p-2">
-                                        <p className="font-bold">Vocabulario</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Viajes, turismo, trabajo y
-                                                tecnología.
-                                            </li>
-                                            <li>
-                                                Hobbies, deportes y
-                                                entretenimiento.
-                                            </li>
-                                            <li>
-                                                Servicios públicos (bancos,
-                                                correos, estaciones de tren).
-                                            </li>
-                                            <li>
-                                                Emergencias y problemas comunes.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Gramática</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Presente perfecto (experiencias
-                                                pasadas).
-                                            </li>
-                                            <li>
-                                                Pasado continuo (acciones en
-                                                progreso en el pasado).
-                                            </li>
-                                            <li>
-                                                Futuro con "will" y "going to".
-                                            </li>
-                                            <li>Condicionales.</li>
-                                            <li>Gerundios e infinitivos.</li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Habilidades</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Relatar experiencias y hablar de
-                                                planes y metas.
-                                            </li>
-                                            <li>
-                                                Participar en conversaciones
-                                                sobre temas de interés.
-                                            </li>
-                                            <li>
-                                                Expresar opiniones y pedir/dar
-                                                consejos.
-                                            </li>
-                                            <li>
-                                                Práctica continua de speaking
-                                                para mejorar la fluidez.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* card*/}
-                            <div className="flex h-full flex-col rounded-2xl bg-lime-400 p-5">
-                                {' '}
-                                <div className="flex flex-row justify-between p-2">
-                                    <p className="text-2xl font-bold">
-                                        Nivel B2
-                                    </p>
-                                    <p>Intermedio Alto</p>
-                                </div>
-                                <div className="flex h-full flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                    <div className="flex flex-col gap-3 p-2">
-                                        <p className="font-bold">Vocabulario</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Opiniones y debates sobre medio
-                                                ambiente, cultura y sociedad.
-                                            </li>
-                                            <li>
-                                                Salud y bienestar, ciencia y
-                                                tecnología.
-                                            </li>
-                                            <li>
-                                                Educación y desarrollo
-                                                profesional.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Gramática</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Voz pasiva (presente, pasado,
-                                                futuro).
-                                            </li>
-                                            <li>
-                                                Reported speech (estilo
-                                                indirecto).
-                                            </li>
-                                            <li>Condicionales.</li>
-                                            <li>Modales.</li>
-                                            <li>
-                                                Uso avanzado de tiempos
-                                                verbales.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Habilidades</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Mantener conversaciones fluidas
-                                                sobre temas complejos.
-                                            </li>
-                                            <li>
-                                                Comprender artículos y textos
-                                                más extensos.
-                                            </li>
-                                            <li>
-                                                Participar en discusiones y
-                                                defender puntos de vista.
-                                            </li>
-                                            <li>
-                                                Práctica continua de speaking
-                                                para fortalecer la comunicación.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* card*/}
-                            <div className="flex h-full flex-col rounded-2xl bg-purple-400 p-5">
-                                {' '}
-                                <div className="flex flex-row justify-between p-2">
-                                    <p className="text-2xl font-bold">
-                                        Nivel C1
-                                    </p>
-                                    <p>Avanzado</p>
-                                </div>
-                                <div className="flex h-full flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                    <div className="flex flex-col gap-3 p-2">
-                                        <p className="font-bold">Vocabulario</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Términos abstractos y temas
-                                                especializados.
-                                            </li>
-                                            <li>
-                                                Lenguaje académico, profesional
-                                                y técnico.
-                                            </li>
-                                            <li>
-                                                Expresiones idiomáticas y
-                                                coloquiales.{' '}
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Gramática</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Estructuras condicionales
-                                                complejas.
-                                            </li>
-                                            <li>Tiempos perfectos.</li>
-                                            <li>
-                                                Uso preciso de partículas y
-                                                conectores.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="felx flex-col rounded-2xl bg-amber-50 p-3 text-left">
-                                        <p className="font-bold">Habilidades</p>
-                                        <ul className="list-disc pl-2">
-                                            <li>
-                                                Fluidez y precisión en textos
-                                                orales y escritos largos.
-                                            </li>
-                                            <li>
-                                                Comprensión de diferentes
-                                                registros del lenguaje.
-                                            </li>
-                                            <li>
-                                                Habilidad para argumentar,
-                                                negociar y persuadir en diversos
-                                                contextos.
-                                            </li>
-                                            <li>
-                                                Énfasis en la práctica continua
-                                                de speaking para un dominio
-                                                completo.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <EnglishLevels />
                     {/* CTA*/}
                     <section className="flex flex-col items-center gap-8 bg-amber-50 px-6 py-16 text-center text-black sm:px-10 lg:gap-12 lg:px-20 lg:py-24 xl:px-40">
                         <h2 className="text-lg font-bold">
@@ -624,6 +260,7 @@ export default function JedahMain(): JSX.Element {
                     <p>Copyright &copy; 2026</p>
                     <p>Hecho con &#9829; por Camila Arce</p>
                 </footer>
+                <MobileMenu />
             </div>
         </>
     );

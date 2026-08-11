@@ -6,11 +6,11 @@ import {
     HandCoins,
     HandHeart,
     MapPin,
-    MenuIcon,
     MessageCircleHeart,
 } from 'lucide-react';
 import type { JSX } from 'react';
 import readingClubImage from '@/assets/images/readingClub.png';
+import MobileMenu from '@/components/mobile-menu';
 import logo from '@/assets/logo.svg';
 import questionImage from '@/assets/question.svg';
 import motherImage from '@/assets/babyBottle.svg';
@@ -28,7 +28,7 @@ export default function JedahMain(): JSX.Element {
                 />
             </Head>
 
-            <div className="min-h-screen bg-amber-50 dark:text-black">
+            <div className="min-h-screen bg-amber-50 pb-24 md:pb-0 dark:text-black">
                 <header className="relative overflow-hidden">
                     <img
                         src={bgWave}
@@ -44,11 +44,6 @@ export default function JedahMain(): JSX.Element {
                                 className="h-16 w-auto sm:h-20 md:h-24"
                             />
                         </Link>
-
-                        {/* Mobile menu */}
-                        <button className="md:hidden">
-                            <MenuIcon className="h-6 w-6" />
-                        </button>
 
                         {/* Desktop menu */}
                         <ul className="hidden gap-6 md:flex lg:gap-10">
@@ -279,6 +274,7 @@ export default function JedahMain(): JSX.Element {
                     <p>Copyright &copy; 2026</p>
                     <p>Hecho con &#9829; por Camila Arce</p>
                 </footer>
+                <MobileMenu />
             </div>
         </>
     );
