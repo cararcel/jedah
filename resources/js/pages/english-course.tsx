@@ -8,11 +8,10 @@ import {
     Rocket,
 } from 'lucide-react';
 import type { JSX } from 'react';
+import logo from '@/assets/logo.svg';
+import bgWave from '@/assets/waves.svg';
 import EnglishLevels from '@/components/english-levels';
 import MobileMenu from '@/components/mobile-menu';
-import logo from '@/assets/logo.svg';
-import englishCourseImage from '@/assets/images/englishCourse.jpg';
-import bgWave from '@/assets/waves.svg';
 import { home } from '@/routes';
 
 export default function JedahMain(): JSX.Element {
@@ -46,28 +45,24 @@ export default function JedahMain(): JSX.Element {
                         {/* Desktop menu */}
                         <ul className="hidden gap-6 md:flex lg:gap-10">
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#sobre-mi">Sobre mí</a>
+                                <a href="#sobre-mi">Sobre mi</a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Contactame</a>
+                                <a href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesan%20tus%20cursos!">
+                                    Contactame
+                                </a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Espacios</a>
+                                <a href="#cursos">Espacios</a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Reviews</a>
+                                <a href="#reviews">Reviews</a>
                             </li>
                         </ul>
                     </nav>
                     {/* Hero English Course*/}
                     <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-10 sm:px-6 sm:py-12 md:flex-row md:items-center md:px-10 lg:gap-10 lg:px-20 lg:py-16">
-                        {/* <img
-                            src={englishCourseImage}
-                            alt="Jedah cartoon with a globe maps and planes and a suitcase"
-                            className="w-full max-w-70 rounded-full sm:max-w-85 md:max-w-95 lg:max-w-115"
-                        />*/}
-
-                        <div className="flex max-w-xl flex-col items-center gap-4 text-center md:items-start md:text-left lg:gap-6">
+                        <div className="m-auto flex max-w-xl flex-col gap-4 md:items-start md:text-left lg:gap-6">
                             <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl">
                                 English Course
                             </h1>
@@ -80,7 +75,7 @@ export default function JedahMain(): JSX.Element {
                             <div className="pt-4 sm:pt-6 lg:pt-10">
                                 <a
                                     className="inline-block rounded-lg bg-cyan-400 px-6 py-4 text-sm font-medium drop-shadow-lg hover:bg-cyan-500 sm:text-base"
-                                    href="#"
+                                    href="https://wa.me/351920069311?text=Hola%2C%20quiero%20comenzar%20con%20el%20curso%20de%20ingl%C3%A9s%21%20gracias"
                                 >
                                     Quiero comenzar
                                 </a>
@@ -154,7 +149,7 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-amber-50 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Hola%2C%20quiero%20comenzar%20con%20el%20curso%20de%20ingl%C3%A9s%21%20gracias"
                             >
                                 Escríbeme
                             </a>
@@ -198,7 +193,7 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=quiero%20saber%20mi%20nivel%20de%20ingl%C3%A9s%2C%20como%20lo%20hago%3F%20gracias"
                             >
                                 descubre tu nivel
                             </a>
@@ -246,7 +241,7 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20ingl%C3%A9s%2C%20gracias"
                             >
                                 Inscribete hoy!
                             </a>

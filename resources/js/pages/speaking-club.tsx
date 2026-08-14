@@ -3,19 +3,17 @@ import {
     Box,
     Calendar,
     Check,
-    Clock,
     HandCoins,
     HandHeart,
     MapPin,
     MessageCircleHeart,
-    Rocket,
 } from 'lucide-react';
 import type { JSX } from 'react';
 import speakingClubImage from '@/assets/images/speakingClub.png';
-import MobileMenu from '@/components/mobile-menu';
 import logo from '@/assets/logo.svg';
 import questionImage from '@/assets/question.svg';
 import bgWave from '@/assets/waves.svg';
+import MobileMenu from '@/components/mobile-menu';
 import { home } from '@/routes';
 
 export default function JedahMain(): JSX.Element {
@@ -49,16 +47,18 @@ export default function JedahMain(): JSX.Element {
                         {/* Desktop menu */}
                         <ul className="hidden gap-6 md:flex lg:gap-10">
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#sobre-mi">Sobre mí</a>
+                                <a href="#sobre-mi">Sobre mi</a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Contactame</a>
+                                <a href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesan%20tus%20cursos!">
+                                    Contactame
+                                </a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Espacios</a>
+                                <a href="#cursos">Espacios</a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Reviews</a>
+                                <a href="#reviews">Reviews</a>
                             </li>
                         </ul>
                     </nav>
@@ -86,7 +86,7 @@ export default function JedahMain(): JSX.Element {
                             <div className="pt-4 sm:pt-6 lg:pt-10">
                                 <a
                                     className="inline-block rounded-lg bg-cyan-400 px-6 py-4 text-sm font-medium drop-shadow-lg hover:bg-cyan-500 sm:text-base"
-                                    href="#"
+                                    href="https://wa.me/351920069311?text=Hola%2C%20me%20interesa%20el%20Speaking%20Club%2C%20gracias"
                                 >
                                     Quiero comenzar
                                 </a>
@@ -172,13 +172,13 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-amber-50 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Hola%2C%20me%20interesa%20el%20Speaking%20Club%2C%20gracias"
                             >
                                 Escríbeme
                             </a>
                         </div>
                     </section>
-                    {/* Descubre tu nivel*/}
+                    {/* Es para mi?*/}
                     <section className="flex flex-col items-center gap-8 bg-amber-50 px-6 py-16 text-center text-black sm:px-10 lg:gap-12 lg:px-20 lg:py-24 xl:px-40">
                         <h2 className="text-lg font-bold">
                             ¿Cómo saber si es para ti??
@@ -186,6 +186,7 @@ export default function JedahMain(): JSX.Element {
                         <div className="flex flex-col items-start gap-5 px-5">
                             <div className="flex flex-col items-center gap-5">
                                 <img
+                                    className="md:size-80"
                                     src={questionImage}
                                     alt="Looking for somenting ore question image"
                                 />
@@ -220,9 +221,9 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Jedah.%20quiero%20unirme%20al%20speaking%20club%2C%20como%20lo%20hago%3F"
                             >
-                                descubre tu nivel
+                                Es para mi!
                             </a>
                         </div>
                     </section>
@@ -267,7 +268,7 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Jedah.%20quiero%20unirme%20al%20speaking%20club%2C%20como%20lo%20hago%3F"
                             >
                                 Inscribete hoy!
                             </a>

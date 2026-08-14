@@ -1,7 +1,7 @@
 import {
     Grid2X2,
     Home,
-    Mail,
+    MessageCircle,
     MessageSquareQuote,
     UserRound,
 } from 'lucide-react';
@@ -30,7 +30,7 @@ const menuItems: MobileMenuItem[] = [
     {
         label: 'Contacto',
         href: 'https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesan%20tus%20cursos!',
-        icon: Mail,
+        icon: MessageCircle,
     },
 ];
 

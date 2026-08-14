@@ -4,17 +4,15 @@ import {
     Calendar,
     Check,
     HandCoins,
-    HandHeart,
     MapPin,
     MessageCircleHeart,
 } from 'lucide-react';
 import type { JSX } from 'react';
-import readingClubImage from '@/assets/images/readingClub.png';
-import MobileMenu from '@/components/mobile-menu';
-import logo from '@/assets/logo.svg';
-import questionImage from '@/assets/question.svg';
 import motherImage from '@/assets/babyBottle.svg';
+import readingClubImage from '@/assets/images/readingClub.png';
+import logo from '@/assets/logo.svg';
 import bgWave from '@/assets/waves.svg';
+import MobileMenu from '@/components/mobile-menu';
 import { home } from '@/routes';
 
 export default function JedahMain(): JSX.Element {
@@ -48,16 +46,18 @@ export default function JedahMain(): JSX.Element {
                         {/* Desktop menu */}
                         <ul className="hidden gap-6 md:flex lg:gap-10">
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#sobre-mi">Sobre mí</a>
+                                <a href="#sobre-mi">Sobre mi</a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Contactame</a>
+                                <a href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesan%20tus%20cursos!">
+                                    Contactame
+                                </a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Espacios</a>
+                                <a href="#cursos">Espacios</a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Reviews</a>
+                                <a href="#reviews">Reviews</a>
                             </li>
                         </ul>
                     </nav>
@@ -84,7 +84,7 @@ export default function JedahMain(): JSX.Element {
                             <div className="pt-4 sm:pt-6 lg:pt-10">
                                 <a
                                     className="inline-block rounded-lg bg-cyan-400 px-6 py-4 text-sm font-medium drop-shadow-lg hover:bg-cyan-500 sm:text-base"
-                                    href="#"
+                                    href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesa%20el%20Mami%20Squad%2C%20me%20das%20mas%20infroamcion%20por%20favor%2C%20gracias"
                                 >
                                     Quiero comenzar
                                 </a>
@@ -209,7 +209,7 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-cyan-400 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesa%20el%20Mami%20Squad%2C%20me%20das%20mas%20infroamcion%20por%20favor%2C%20gracias"
                             >
                                 Quiero unirme
                             </a>
@@ -260,7 +260,7 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesa%20el%20Mami%20Squad%2C%20me%20das%20mas%20infroamcion%20por%20favor%2C%20gracias"
                             >
                                 Inscribete hoy!
                             </a>

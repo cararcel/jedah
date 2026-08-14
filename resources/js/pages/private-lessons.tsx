@@ -1,8 +1,6 @@
 import { Head, Link } from '@inertiajs/react';
 import {
     BriefcaseBusiness,
-    Check,
-    HandCoins,
     HandHeart,
     Plane,
     Rocket,
@@ -10,11 +8,10 @@ import {
 } from 'lucide-react';
 import type { JSX } from 'react';
 import conversationImage from '@/assets/conversation.svg';
-import onlineImage from '@/assets/online.svg';
-import MobileMenu from '@/components/mobile-menu';
 import logo from '@/assets/logo.svg';
-import questionImage from '@/assets/question.svg';
+import onlineImage from '@/assets/online.svg';
 import bgWave from '@/assets/waves.svg';
+import MobileMenu from '@/components/mobile-menu';
 import { home } from '@/routes';
 
 export default function JedahMain(): JSX.Element {
@@ -48,16 +45,18 @@ export default function JedahMain(): JSX.Element {
                         {/* Desktop menu */}
                         <ul className="hidden gap-6 md:flex lg:gap-10">
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#sobre-mi">Sobre mí</a>
+                                <a href="#sobre-mi">Sobre mi</a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Contactame</a>
+                                <a href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesan%20tus%20cursos!">
+                                    Contactame
+                                </a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Espacios</a>
+                                <a href="#cursos">Espacios</a>
                             </li>
                             <li className="rounded-lg px-4 py-2 font-medium hover:bg-orange-100">
-                                <a href="#">Reviews</a>
+                                <a href="#reviews">Reviews</a>
                             </li>
                         </ul>
                     </nav>
@@ -69,7 +68,7 @@ export default function JedahMain(): JSX.Element {
                             className="w-full max-w-70 rounded-full sm:max-w-85 md:max-w-95 lg:max-w-115"
                         /> */}
 
-                        <div className="flex max-w-xl flex-col items-center gap-4 text-center md:items-start md:text-left lg:gap-6">
+                        <div className="mx-auto flex max-w-xl flex-col gap-4 md:items-start md:text-left lg:gap-6">
                             <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl">
                                 Private Lessons
                             </h1>
@@ -84,7 +83,7 @@ export default function JedahMain(): JSX.Element {
                             <div className="pt-4 sm:pt-6 lg:pt-10">
                                 <a
                                     className="inline-block rounded-lg bg-yellow-200 px-6 py-4 text-sm font-medium drop-shadow-lg hover:bg-yellow-400 sm:text-base"
-                                    href="#"
+                                    href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesan%20las%20clases%20particulares%2C%20me%20puedes%20dar%20m%C3%A1s%20informaci%C3%B3n%3F%20gracias"
                                 >
                                     Quiero comenzar
                                 </a>
@@ -179,7 +178,7 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-amber-50 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesan%20las%20clases%20particulares%2C%20me%20puedes%20dar%20m%C3%A1s%20informaci%C3%B3n%3F%20gracias"
                             >
                                 Escríbeme
                             </a>
@@ -191,6 +190,7 @@ export default function JedahMain(): JSX.Element {
                         <div className="flex flex-col items-start gap-5 px-5">
                             <div className="flex flex-col items-center gap-5">
                                 <img
+                                    className="md:size-80"
                                     src={conversationImage}
                                     alt="Looking for somenting ore question image"
                                 />
@@ -234,6 +234,7 @@ export default function JedahMain(): JSX.Element {
                         <div className="flex flex-col items-start gap-5 px-5">
                             <div className="flex flex-col items-start gap-5">
                                 <img
+                                    className="mx-auto md:size-80"
                                     src={onlineImage}
                                     alt="Looking for somenting ore question image"
                                 />
@@ -323,7 +324,7 @@ export default function JedahMain(): JSX.Element {
                         <div>
                             <a
                                 className="inline-block rounded-2xl bg-rose-200 px-6 py-3 drop-shadow-lg hover:bg-rose-400"
-                                href="#"
+                                href="https://wa.me/351920069311?text=Hola%20Jedah%2C%20me%20interesan%20las%20clases%20particulares%2C%20me%20puedes%20dar%20m%C3%A1s%20informaci%C3%B3n%3F%20gracias"
                             >
                                 Inscribete hoy!
                             </a>
